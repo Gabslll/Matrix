@@ -1,0 +1,9 @@
+pc 1 -mPC Gamer Dell Alienware Aurora R15 i1300-A30P, 
+Intel Core i7-13700K, 32GB DDR5, 
+GeForce RTX 3070, SSD 512GB, 
+Win 11 Home - 210-BJCQ
+
+pc 2 -Computador Gamer Hyperx 
+Intel Core I9 10850k 32GB Ssd 1TB M.2 Rtx 3070 8GB Water Cooler Windows 10
+
+pc 3-PC Gamer Tertz Cave, Rtx 4080, 7700x, 1TB, 32GB DDR5
