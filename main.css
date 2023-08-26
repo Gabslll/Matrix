@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 20px 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+body {
+    font-family: 'Geomatrix', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-image: url("imagens/markus-spiske-iar-afB0QQw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #f5f5f5;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 50px; /* Margem superior para centralização */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido para os cards */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra nos cards container */
+}
+
+.card {
+    position: relative;
+    width: 220px;
+    height: 260px;
+    background: #fff;
+    border: solid 4px #333;
+    box-shadow: -5px 5px #333;
+    transition: all .2s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    margin: 10px 10px 0 0;
+    box-shadow: 0px 0px #333;
+}
+
+.card .img-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: calc(100% - 50px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter .2s 1s ease-in-out;
+}
+
+.card:hover .img-card {
+    filter: blur(1px);
+}
+
+.card .add-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: rgba(255, 255, 255, 0.452);
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+    font-size: 19px;
+    opacity: 0;
+}
+
+.card:hover .add-cart {
+    opacity: 1;
+    transition: opacity .3s 1s ease-in-out;
+}
+
+.card .info-card {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px #333;
+}
+
+.card .info-card p {
+    font-size: 14px;
+    margin: 5px;
+} 
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .store-front {
+    position: inherit;
+    max-width: 1280px;
+    width: 150%;
+    margin: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 30px #a0ffa0,
+                -10px -10px 30px #6df5a1;
+}
+
+.card-shop {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 670px;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #212121;
+    border: 2px solid #313131;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content .para {
+    line-height: 1.5;
+}
+
+.content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #09f15667;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-shop:hover {
+    box-shadow: 0 0 20px rgba(9, 241, 113, 0.8);
+    border-color: #09f162;
+}
+
+.content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+}
+
+.content .btn:active {
+    box-shadow: none;
+}
+
+.card-social {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 42%;
+    height: 70px;
+    width: 270px;
+}
+
+.card-social svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card-social .social-link1,.card-social .social-link2,.card-social .social-link3,.card-social .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card-social svg {
+    transform: scale(1);
+}
+
+.card-social .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+
+.card-social .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.card-social .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card-social .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+    transform: scale(1.4);
+}
+
+60% {
+    transform: scale(0.8);
+}
+
+80% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+}
+
+#contact .container-c {
+    display: block;
+    margin-left: 200px;
+    font-family: 'Geomatrix', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #f5f5f570;
+}
+
+.contact-methods {
+    display: flex;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+}
