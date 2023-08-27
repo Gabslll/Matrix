@@ -317,3 +317,9 @@ form button {
 form textarea {
     resize: none;
 }
+
+footer {
+    background-color: #6df5a1a1;
+    color: #fff;
+    padding: 16px 0;
+}
