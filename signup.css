@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-left: 45%;
+}
+
+body {
+    font-family: 'Geomatrix', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 720px;
+    gap: 15px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: #a86df5;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #b152e7;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #9e36f3;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: #6f0e9cd8;
+}
+
+.signin a:hover {
+    text-decoration: underline #9c40d1;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid + span {
+    color: purple;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: #b152e7;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+}
+
+.submit:hover {
+background-color: #a02be4;
+}
+
+@keyframes pulse {
+    from {
+    transform: scale(0.9);
+    opacity: 1;
+    }
+
+    to {
+    transform: scale(1.8);
+    opacity: 0;
+    }
+}
+
+footer {
+    background-color: #a02be4ab;
+    color: #fff;
+    margin-top: 12%;
+    padding: 16px 0;
+}
